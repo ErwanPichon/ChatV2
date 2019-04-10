@@ -1,0 +1,348 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#00ffd5, #001f1a);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Page de connexion */
+
+h1 {
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+    font-size: 8em;
+}
+
+#connected {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#connected input {
+    text-align: center;
+    background-color: white;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    width: 100%;
+    box-sizing: content-box;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.button {
+    width: 150px;
+    height: 25px;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px #ff0084;
+}
+
+
+
+/* LOADER */
+
+.sk-cube-grid {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    transform: rotate(45deg)
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.507);
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+
+/* Chat */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+}
+
+#chat {
+    height: 90%;
+    width: 60%;
+    bottom: 0;
+}
+
+#contentChat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    overflow-y: scroll;
+}
+
+#contentSend {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message {
+    width: 88%;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+#send {
+    width: 8%;
+    height: 60%;
+    font-size: 1em;
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+#send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px #ff0084;
+}
+
+#contentChat {
+    display: flex;
+    flex-direction: column;
+}
+
+#contentChat h2 {
+    height: 1em;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+#contentChat li div {
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    background-color: #00000088;
+}
+
+#contentChat li div p {
+    margin: 5px;
+}
+
+.other {
+    align-self: flex-start;
+}
+
+.other div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-right: 33%;
+}
+
+.other div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border: 15px solid transparent;
+    border-bottom-color: #00000088;
+    border-top: 0;
+    margin-left: -10px;
+    margin-top: -15px;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.me h2 {
+    align-self: flex-end;
+}
+
+
+.me div {
+    position: relative;
+    border-radius: 15px;
+    margin-left: 33%;
+}
+
+.me div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 15px solid transparent;
+    border-bottom-color: #00000088;
+    border-top: 0;
+    margin-top: -15px;
+    margin-right: 20px;
+}
+
+.timeCreation {
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 13px;
+}
+
+.other div .timeCreation {
+    align-self: flex-end;
+}
+
+
+
+/* FILTER */
+
+#filter {
+    width: 100px;
+}
+
+#contentFilter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80%;
+}
+
+#list div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contentFilter h2 {
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+    font-size: 4em;
+}
+
+#contentFilter div label:hover,
+#contentFilter div input:hover {
+    cursor: pointer;
+    color: #ff0084;
+}
+
+#contentFilter input {
+    margin-bottom: 20px;
+}
+
+#contentFilter button {
+    margin-top: 20px;
+}
